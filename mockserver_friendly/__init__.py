@@ -106,7 +106,7 @@ class _Timing:
             return {"unlimited": True}
 
     def for_verification(self):
-        return {"exact": True, "count": self.count}
+        return {"atLeast": self.count, "atMost": self.count}
 
 
 class _Time:
